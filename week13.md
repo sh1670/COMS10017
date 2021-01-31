@@ -1,3 +1,8 @@
+# TASK 0: Setting up your machine
+
+*[Windows](https://mediasite.bris.ac.uk/Mediasite/Play/da355bec145b4c7fa2940738340a454a1d) 
+*[Ubuntu](https://mediasite.bris.ac.uk/Mediasite/Play/eb4047f525c642de8b4bef98c006c2c21d) 
+
 # TASK 1: Teamwork in the Cloud
 
 The first two weeks of labs will be warm-up exercises giving you time to set up your working methods, test and try all the basic Java concepts given in lectures and as lab tasks, and also establish how to work in your team effectively and efficiently. The purpose of this first TASK 1 is to try out the Java toolchain, in particular use the `javac`, `java` and `git` commands to work together in your pair programming team in the Cloud. Nothing needs to be submitted, and there are no marks, but it is essential to do this formative exercise to get off to a good start.
