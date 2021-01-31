@@ -14,7 +14,7 @@ At the end of this lab you should be able to work in your pair programming team 
 
 ## Compiling and Running Java Programs
 
-Make sure Java is installed on your system or lab machine: read the [setup guide](https://github.com/tom91136/coms10009-wiki/blob/master/SETUP.md) carefully. To check that you have the javac and java commands installed properly, type:
+Make sure Java is installed on your system or lab machine: read the [setup guide](https://github.com/tom91136/coms10009-wiki/blob/master/SETUP.md) carefully and / or follow the videos for [Windows] (https://mediasite.bris.ac.uk/Mediasite/Play/da355bec145b4c7fa2940738340a454a1d) or [Ubuntu] (https://mediasite.bris.ac.uk/Mediasite/Play/eb4047f525c642de8b4bef98c006c2c21d) on Blackboard. To check that you have the javac and java commands installed properly, type:
 
     $ javac -version
     $ java -version
@@ -40,7 +40,7 @@ In order to work together as a team both of you need to be able to work on the s
 
     $ git --version
 
-Git should report back the version you have installed. Next, we need a place in the Cloud to be used as a repository. Only one repository is needed for your entire team, that is why only one of you needs to set up a private repository. The other team member will then be given access to it. If you already have access to a private BitBucket or Github account you may want to use your existing one. (It is important that your repository you use is private, so your code is only shared with your team partner and nobody else can copy your work.) If this is your first time in the Cloud, an easy way to get started is to create a free BitBucket account by going to [bitbucket.org](https://bitbucket.org/) and signing up with your university email address. This should give you access to an account with free private repositories. In BitBucket create a new private repository and name it something like `OOP-01`. Now, on your local machine, navigate into the directory where your .java and .class files are stored and initialise this directory as a Git repository or 'repo' via:
+Git should report back the version you have installed. Next, we need a place in the Cloud to be used as a repository. Only one repository is needed for your entire team, that is why only one of you needs to set up a private repository. The other team member will then be given access to it. If you already have access to a private Github account you may want to use your existing one. (It is important that your repository you use is private, so your code is only shared with your team partner and nobody else can copy your work.) If this is your first time in the Cloud, an easy way to get started is to create a free Github account by going to [github.com](https://github.com/) and signing up with your university email address. This should give you access to an account with free private repositories. In Github create a new private repository and name it something like `OOP-01`. Now, on your local machine, navigate into the directory where your .java and .class files are stored and initialise this directory as a Git repository or 'repo' via:
 
     $ git init
 
@@ -65,15 +65,15 @@ The -a option says to commit all the changes and additions you have made. The -m
     ...                    (edit .gitignore to ignore files)
     $ git commit -am "..." (take a snapshot)
 
-Now it is time to link your local repository to the BitBucket repository you have created online. To do this, we first connect your local project directory with your online repository:
+Now it is time to link your local repository to the Github repository you have created online. To do this, we first connect your local project directory with your online repository:
 
-    $ git remote add origin https://USERNAME@bitbucket.org/USERNAME/OOP-01.git
+    $ git remote add origin  https://github.com/sh1670/USERNAME/OOP-01.git
 
 where USERNAME is the username used to create the repository. (Depending on how you set up your repository, you might first have to remove your link to the existing origin, e.g. via `git remote rm origin`). Once this is set up it is time to copy (or 'push') your commited project files to the online repository for the first time:
 
     $ git push -u origin master
 
-This will ask you for your BitBucket password. Once this is entered, your files will be uploaded to the Cloud and you will have succeeded in setting up an online project repository for your team.
+This will ask you for your Github password. Once this is entered, your files will be uploaded to the Cloud and you will have succeeded in setting up an online project repository for your team.
 
 * * *
 
@@ -83,13 +83,13 @@ This will ask you for your BitBucket password. Once this is entered, your files 
 
 ## Working Together
 
-Now, if your team partner wants to work with you, you can share your repository. First you should give your partner shared access to your BitBucket repository online (only **ONE** team member create the repository and share it with everyone else). To share a repository in BitBucket, add your team member's email as shown below, ensure you set the permission (red box 4) to Admin otherwise your partner will not be able to make changes.  
+Now, if your team partner wants to work with you, you can share your repository. First you should give your partner shared access to your Github repository online (only **ONE** team member create the repository and share it with everyone else). To share a repository in Github, add your team member's email as shown below.
 ![](bb_setup.png)  
-One you click _Add_, your partner should receive an email like this:  
-![](bb_email.png)  
+One you click _Invite a collaborator_, your partner should receive an email. 
+
 Accept the invitation and you should be taken to the repository. Take note of the repository clone command at the top of the page, it should look like:
 
-    git clone https://YOUR_USERNAME@bitbucket.org/THE_USERNAME_OF_THE_PERSON_WHO_CREATED_THE_REPO_AND_SHARED_IT_WITH_YOU/foo.git
+    git clone https://github.com/THE_USERNAME_OF_THE_PERSON_WHO_CREATED_THE_REPO_AND_SHARED_IT_WITH_YOU/COMS10017.git/foo.git
 
 Clone the repository with the command. When you are collaborating, each partner has a clone of the same online repo. You need to make sure you can both read from and write to it. Your workflow is now, roughly:
 
@@ -116,7 +116,7 @@ If the push command doesn't work, one common problem is that you forgot to commi
 
 ## Future Submission of Zips
 
-You don't need to submit anything for this exercise. But you will have to submit the project of this unit to SAFE some time in the future - there we will ask you to submit a zip file of your repository. You might think that you can just zip from the directory above the project directory. Although just zipping your project folder works, it contains the entire history of your project in the .git subdirectory, so this is not a good idea. A better idea, from inside the project directory, is to type:
+You don't need to submit anything for this exercise. But you will have to submit the project of this unit to Blackboard some time in the future - there we will ask you to submit a zip file of your repository. You might think that you can just zip from the directory above the project directory. Although just zipping your project folder works, it contains the entire history of your project in the .git subdirectory, so this is not a good idea. A better idea, from inside the project directory, is to type:
 
     $ git archive master -o project.zip
 
