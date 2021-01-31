@@ -14,7 +14,7 @@ At the end of this lab you should be able to work in your pair programming team 
 
 ## Compiling and Running Java Programs
 
-Make sure Java is installed on your system or lab machine: read the [setup guide](https://github.com/tom91136/coms10009-wiki/blob/master/SETUP.md) carefully and / or follow the videos for [Windows] (https://mediasite.bris.ac.uk/Mediasite/Play/da355bec145b4c7fa2940738340a454a1d) or [Ubuntu] (https://mediasite.bris.ac.uk/Mediasite/Play/eb4047f525c642de8b4bef98c006c2c21d) on Blackboard. To check that you have the javac and java commands installed properly, type:
+Make sure Java is installed on your system or lab machine: read the [setup guide](https://github.com/tom91136/coms10009-wiki/blob/master/SETUP.md) carefully or follow the videos for [Windows](https://mediasite.bris.ac.uk/Mediasite/Play/da355bec145b4c7fa2940738340a454a1d) or [Ubuntu](https://mediasite.bris.ac.uk/Mediasite/Play/eb4047f525c642de8b4bef98c006c2c21d) on Blackboard. To check that you have the javac and java commands installed properly, type:
 
     $ javac -version
     $ java -version
